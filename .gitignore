@@ -1,0 +1,8 @@
+# Env
+.env
+
+# Misc
+.DS_Store
+docker-deploy.zip
+leaveboard-client
+leaveboard-server
