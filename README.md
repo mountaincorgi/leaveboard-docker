@@ -6,7 +6,7 @@ Make sure Docker and Docker Compose are installed on the instance.
 
 1. Go to the directory containing both front-end and back-end directories
 3. Make sure the following files are present:
-   - .env
+   - .env (generate keys using `openssl rand -base64 64`)
    - .env.sample
    - docker-compose.yml
    - This README
