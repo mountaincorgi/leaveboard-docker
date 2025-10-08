@@ -67,4 +67,4 @@ db.user.insertOne({
 
 ## Development
 
-See the 2 `command` lines in the `docker-compose.yml` file. During development, uncomment these lines in order to override the Dockerfiles' `CMD` instructions and enable hot reloading.
+See the `volume` and `command` lines in the `docker-compose.yml` file. During development, uncomment these lines in order to override the Dockerfiles' `CMD` instructions and enable hot reloading.
