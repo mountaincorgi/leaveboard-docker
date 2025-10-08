@@ -15,6 +15,9 @@ services:
     env_file: ./.env
     depends_on: [mongo]
     ports: ["${PORT:-7088}:${PORT:-7088}"]
+    volumes:
+      - ./leaveboard-server:/app
+      - /app/node_modules
 
   client:
     build:
@@ -25,6 +28,10 @@ services:
     restart: unless-stopped
     depends_on: [server]
     ports: ["7091:7091"]
+    volumes:
+      - ./leaveboard-client:/app
+      - /app/node_modules
+      - /app/dist
 
 volumes:
   mongo_data:
