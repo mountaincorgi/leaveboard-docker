@@ -18,7 +18,6 @@ services:
     # volumes:
     #   - ./leaveboard-server:/app
     #   - /app/node_modules
-    # Uncomment the line below during development - hot reload
     # command: node --watch index.js
 
   client:
@@ -34,7 +33,6 @@ services:
     #   - ./leaveboard-client:/app
     #   - /app/node_modules
     #   - /app/dist
-    # Uncomment the line below during development - hot reload
     # command: npm run dev -- --host 0.0.0.0 --port 7091
 
 volumes:
